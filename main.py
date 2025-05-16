@@ -35,9 +35,9 @@ def handle_global_exception(e):
 
 # --- Load Persona ---
 PERSONA_FILE_PATH = 'persona.json'
-PERSONA_DESCRIPTION = "You are a helpful assistant." # Default persona
-PERSONA_NAME = "Assistant"
-BASE_PROMPT = "You are a helpful and concise AI assistant replying in a WhatsApp chat. Do not use Markdown formatting. Keep your answers short, friendly, and easy to read. If your response is longer than 3 lines, split it into multiple messages using \n every 3 lines. Each \n means a new WhatsApp message. Avoid long paragraphs or unnecessary explanations."
+PERSONA_DESCRIPTION = "You are a helpful and friendly assistant." # Default persona
+PERSONA_NAME = "AI Chabot Assistant"
+BASE_PROMPT = "You are a concise, friendly AI assistant chatting on WhatsApp. Keep replies short, clear, and casual. \n Break responses every 3 lines to fit WhatsApp style. \n Avoid long texts, over-explaining, or formatting like Markdown."
 
 try:
     with open(PERSONA_FILE_PATH, 'r') as f:
