@@ -33,7 +33,7 @@ def handle_global_exception(e):
     logging.error(f"Unhandled Exception: {e}", exc_info=True)
     return jsonify(status='error', message='An internal server error occurred.'), 500
 
-# --- Load Persona ---
+# --- Load Personaa ---
 PERSONA_FILE_PATH = 'persona.json'
 PERSONA_DESCRIPTION = "You are a helpful and friendly assistant." # Default persona
 PERSONA_NAME = "AI Chabot Assistant"
